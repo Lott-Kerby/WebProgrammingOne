@@ -1,0 +1,65 @@
+body, html
+{
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+#Wrap
+{
+  width: 100%;
+  margin: 0 auto;
+}
+
+#Header
+{
+  padding: 5px 10px;
+  border-bottom: 3px solid white;
+}
+
+#Main
+{
+  float: left;
+  height: 100%;
+  width: 75%;
+  padding: 10px;
+  border-right: 2px solid white;
+}
+
+#Sidebar
+{
+  float: left;
+  height: 100%;
+  width: auto;
+  padding: 10px;
+  border-left: 2px solid white;
+}
+
+/*styling for paragraph text*/
+p
+{
+  color: white;
+  font-family: Geneva, Tahoma, Verdana, sans-serif;
+  font-weight: 900;
+}
+
+/*styling for headings text*/
+h1, h2, h3
+{
+  color: white;
+  font-family: Geneva, Tahoma, Verdana, sans-serif;
+}
+
+/* unvisited link */
+a:link 
+{
+  color:orange;
+  font-size: 20px;
+}
+  
+/* visited link */
+a:visited 
+{
+  color: white;
+  font-size: 20px;
+}
