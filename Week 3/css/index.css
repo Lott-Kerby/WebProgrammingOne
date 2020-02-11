@@ -1,0 +1,40 @@
+body
+{
+    background-image: url('../../assets/canyon.jpg');
+    background-size: 2050px 1150px;
+}
+#Wrapper
+{
+    text-align: center;
+}
+#Main
+{
+    vertical-align: top;
+    background-color: white;
+    height: 55%;
+    width: 25%;
+    padding: 50px;
+    margin-top: 8%;
+    margin-right: 10%;
+    display: inline-block;
+}
+
+#Button_Panel
+{
+    vertical-align: top;
+    height: 25%;
+    width: 12%;
+    margin-top: 8%;
+    display: inline-block;
+}
+
+#Button
+{
+    background-color: #5ACFC2;
+    height: 50px;
+    width: 95%;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+#Button:hover {background-color: rgb(13, 21, 129);}
