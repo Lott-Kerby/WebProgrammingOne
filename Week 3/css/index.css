@@ -9,11 +9,12 @@ body
 }
 #Main
 {
+    border-radius: 15px;
     vertical-align: top;
     background-color: white;
-    height: 55%;
-    width: 25%;
-    padding: 50px;
+    height: 68%;
+    width: 26%;
+    padding: 25px;
     margin-top: 8%;
     margin-right: 10%;
     display: inline-block;
@@ -30,11 +31,100 @@ body
 
 #Button
 {
+    border-radius: 10px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-weight: 700;
+    font-size: large;
+    color: white;
     background-color: #5ACFC2;
+    text-align: center;
+    line-height: 45px;
     height: 50px;
-    width: 95%;
+    width: 100%;
     margin-bottom: 15px;
     display: inline-block;
 }
 
+#Main_text_box
+{
+    color: rgb(85, 83, 83); 
+    font-weight: 100;
+    font-size: small;
+    font-family: FreeMono, monospace;
+    height: 35%;
+    width: 97.5%;
+    padding: 5px;
+    padding-top: 10px;
+}
+
+h1
+{
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: xx-large;
+    letter-spacing: 3px;
+    color:  rgb(13, 21, 129);
+    text-align: left;
+    margin: 0px;
+    display: inline;
+}
+
+#Name
+{
+    color: #5ACFC2;
+    text-align: left;
+    width: 0px;
+}
+
+#Bottom_text_box
+{
+    height: 9%;
+    width: 97.5%;
+    padding: 5px;
+}
+#Line_separator
+{
+    border-top: 2px solid black;
+    width: 97.5%;
+    padding: 5px;
+}
+#about_me_img
+{
+    height: 350px;
+    width: 350px;
+}
+
 #Button:hover {background-color: rgb(13, 21, 129);}
+
+@media screen and (min-width: 360px) and (max-width: 640px)
+{
+    
+    body
+    {
+        background-image: url('../../assets/canyon.jpg');
+        background-size: 1050px 950px; 
+    }
+    #Main
+    {
+        display: block;
+        background-color: white;
+        height: 55%;
+        width: 65%;
+        padding: 50px;
+        margin-right: 10%;
+        margin-top: 0px;
+    }
+    #Button_Panel
+    {
+        display: block;
+        height: 25%;
+        width: 87%;
+        column-count:2;
+    }
+    #Button
+    {
+        background-color: #5ACFC2;
+        height: 50px;
+        width: 95%;
+        margin-bottom: 15px;
+    }
+}
