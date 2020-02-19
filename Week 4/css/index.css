@@ -29,7 +29,7 @@ body
     display: inline-block;
 }
 
-#Button
+#ABT_Button, #TVL_Button, #RPS_Button
 {
     border-radius: 10px;
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
@@ -93,9 +93,9 @@ h1
     width: 350px;
 }
 
-#RPS_view .button
+.button
 {
-    background-color: #4CAF50;
+    background-color: #5ACFC2;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -107,7 +107,57 @@ h1
     cursor: pointer;
 }
 
-#Button:hover {background-color: rgb(13, 21, 129);}
+#Pictures
+{
+    height: 150px;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 19px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* set column sizes here */
+    grid-template-rows: auto auto; /* we want two rows */
+    column-gap: 0%;
+    row-gap: 8%;
+
+    grid-auto-flow: row; /* fill in by column, not row */
+    justify-items: center;
+}
+
+#Game_results
+{
+    height: 150px;
+    width: 100%;
+    margin-top: 50px;
+    font-size: 19px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* set column sizes here */
+    grid-template-rows: auto auto; /* we want two rows */
+    column-gap: 0%;
+
+    grid-auto-flow: row; /* fill in by column, not row */
+}
+
+#User_choice
+{
+    width:179px;
+}
+#_choice
+{
+    width:179px;
+}
+#User_score
+{
+    width:179px;
+}
+#System_score
+{
+    width:179px;
+}
+
+#ABT_Button:hover, #TVL_Button:hover, #RPS_Button:hover {background-color: rgb(13, 21, 129);}
+#Rock:hover, #Paper:hover, #Scissors:hover {background-color: rgb(13, 21, 129);}
 
 @media screen and (min-width: 360px) and (max-width: 640px)
 {
