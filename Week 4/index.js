@@ -15,8 +15,6 @@ var rps = ["rock", "paper", "scissors"];
 
 document.addEventListener('DOMContentLoaded', function()
 {
-
-
     /*Rock button handler*/
     document.getElementById("Rock").addEventListener('click', function ()
     {
@@ -47,14 +45,15 @@ document.addEventListener('DOMContentLoaded', function()
         calculate_score(result);
     }); 
 
+    /*About me button handler */
     document.getElementById("ABT_Button").addEventListener('click', function ()
     {
         document.getElementById("About_me_view").style.display = "block";
         document.getElementById("Travel_list_view").style.display = "none";
         document.getElementById("RPS_view").style.display = "none";
-        console.log("about");
     });
 
+    /*Travel list button handler */
     document.getElementById("TVL_Button").addEventListener('click', function ()
     {
         document.getElementById("About_me_view").style.display = "none";
@@ -63,6 +62,7 @@ document.addEventListener('DOMContentLoaded', function()
         console.log("tvl");
     });
 
+    /*Rock paper scissors button handler */
     document.getElementById("RPS_Button").addEventListener('click', function ()
     {
         document.getElementById("About_me_view").style.display = "none";
