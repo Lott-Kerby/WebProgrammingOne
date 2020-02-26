@@ -1,0 +1,108 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/index.css" media="screen">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<script src="index.js"></script>
+<body>
+    <div id="Wrapper">
+        <div id="Button_Panel">
+            <div id="ABT_Button">About Me</div>
+            <div id="TVL_Button">Travel Bucket List</div>
+            <div id="RPS_Button">Rock Paper Scissors</div>
+            <div id="WL_Button">School Waitlist</div>
+        </div>
+
+        <div id="Main">
+            <div id="About_me_view" >
+                <img id="about_me_img" src="../assets/main_pic.png">
+                <div id="Main_text_box">
+                    <h1>Hi, I'm </h1><h1 id="Name">Lott-Kerby Lalime</h1><br/>
+                    <br/>
+                    This is my web page, I am 25 years old and currently completing my master's degree in computer engineering. I am haitian american born 
+                here in Tampa, Florida. Having two older sisters and two younger brothers, I am the middle child in a big happy family of seven and
+                have always been surrounded by many loved ones. People describe me as a calm and collected kind of guy but I enjoy being adventerous by 
+                traveling to new places, staying active by playing sports and exposing myself to different cultures. I decided to take this course
+                becuase it relates to my research thesis and because I love programming.
+                </div>
+
+                <div id="Bottom_text_box">
+                    <div id="Line_separator"></div>
+                    e-mail: lalime@mail.usf.edu LinkedIn: www.linkedin.com/in/lott-kerby-lalime-419b178b
+                </div>
+            </div>
+
+            <div id="Travel_list_view" style="display:none;">
+                <div id="Pictures">
+                    <div> Where I've been</div>
+                    <div> Where I'd like to go</div>
+                    <img src="../assets/gc.jpg" width="135px" height="105px"> 
+                    <img src="../assets/barc.jpg" width="135px" height="105px"> 
+                    <img src="../assets/haiti.jpg" width="135px" height="105px">
+                    <img src="../assets/dubai.jpeg" width="135px" height="105px">
+                    <img src="../assets/atl.jfif" width="135px" height="105px">  
+                    <img src="../assets/venice.jpg" width="135px" height="105px"> 
+                    <img src="../assets/nasa.jpg" width="135px" height="105px"> 
+                    <img src="../assets/sing.jpg" width="135px" height="105px"> 
+                    <img src="../assets/nyc.jpg" width="135px" height="105px"> 
+                </div>
+            </div>
+
+            <div id="RPS_view" style="display:none;">
+                <div id="Rock"  class="button">Rock</div>
+                <div id="Paper" class="button">Paper</div>
+                <div id="Scissors" class="button">Scissors</div>
+
+                <div id="Game_results">
+                    <div id="User_choice" >Your choice is:</div>
+                    <div id="System_choice" >My choice is:</div>
+                    <div id="User_score" >Your score is:</div>
+                    <div id="System_score" >My score:</div>
+                </div>
+            </div>
+
+            <div id="WL_view" style="display:none;">
+                    <h2>Please fill the form below to place your student on a school's wait list</h2>
+                    
+                    <form class="form-horizontal needs-validation" action="#" onsubmit="return formSubmit(this); return false;">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="Student Name" placeholder="Enter student name" name="student name" required>
+                          </div>
+                      <div class="form-group">
+                        <label for="age">Age:</label>
+                        <input type="text" class="form-control" id="Age" placeholder="Enter student age" name="age" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="gender">Gender:</label>
+                        <input type="text" class="form-control" id="Gender" placeholder="Enter student gender" name="gender" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="grade">Upcoming Grade:</label>
+                        <input type="text" class="form-control" id="Grade" placeholder="Enter student's upcoming grade" name="age" required>
+                      </div>
+
+                      <div id="Dropdown_menu" class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select a school
+                        <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                          <li><a onClick="onClick_lincoln(); return false;" href="#">Lincoln Middle School</a></li>
+                          <li><a onClick="onClick_xavier(); return false;" href="#">Xavier Academy</a></li>
+                          <li><a onClick="onClick_hogwarts(); return false;" href="#">Hogwarts</a></li>
+                        </ul>
+                      </div>
+                      <div id="School_info">School Info:</div>
+                      <button id="Submit_button" type="submit" class="btn btn-default">Submit</button>
+                      <div id="Submit_confirm"></div>
+                    </form>
+                
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

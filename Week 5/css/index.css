@@ -14,8 +14,8 @@ body
     border-radius: 15px;
     vertical-align: top;
     background-color: white;
-    height: 68%;
-    width: 26%;
+    height: 710px;
+    width: 550px;
     padding: 25px;
     margin-top: 8%;
     margin-right: 10%;
@@ -31,7 +31,7 @@ body
     display: inline-block;
 }
 
-#ABT_Button, #TVL_Button, #RPS_Button
+#ABT_Button, #TVL_Button, #RPS_Button, #WL_Button
 {
     border-radius: 10px;
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
@@ -49,9 +49,9 @@ body
 
 #Main_text_box
 {
-    color: rgb(85, 83, 83); 
+    color: rgb(85, 83, 83);
     font-weight: 100;
-    font-size: small;
+    font-size: 100%;
     font-family: FreeMono, monospace;
     height: 35%;
     width: 97.5%;
@@ -61,18 +61,18 @@ body
 
 h1
 {
-    font-family: Impact, Charcoal, sans-serif;
-    font-size: xx-large;
-    letter-spacing: 3px;
-    color:  rgb(13, 21, 129);
-    text-align: left;
-    margin: 0px;
-    display: inline;
+    font-family: Impact, Charcoal, sans-serif !important;
+    font-size: xx-large !important;
+    letter-spacing: 3px !important;
+    color:  rgb(13, 21, 129) !important;
+    text-align: left !important;
+    margin: 0px !important;
+    display: inline !important;
 }
 
 #Name
 {
-    color: #5ACFC2;
+    color: #5ACFC2 !important;
     text-align: left;
     width: 0px;
 }
@@ -82,6 +82,8 @@ h1
     height: 9%;
     width: 97.5%;
     padding: 5px;
+    margin-top: 16%;
+    font-size: initial;
 }
 
 #Line_separator
@@ -93,8 +95,8 @@ h1
 
 #about_me_img
 {
-    height: 350px;
-    width: 350px;
+    height: 300px;
+    width: 300px;
 }
 
 .button
@@ -160,8 +162,18 @@ h1
     width:179px;
 }
 
-#ABT_Button:hover, #TVL_Button:hover, #RPS_Button:hover {background-color: rgb(13, 21, 129);}
+#ABT_Button:hover, #TVL_Button:hover, #RPS_Button:hover, #WL_Button:hover {background-color: rgb(13, 21, 129);}
 #Rock:hover, #Paper:hover, #Scissors:hover {background-color: rgb(13, 21, 129);}
+
+.form-horizontal
+{
+    text-align: left;
+}
+
+#Submit_button
+{
+    margin-top: 5%;
+}
 
 @media screen and (min-width: 360px) and (max-width: 640px)
 {
