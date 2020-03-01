@@ -29,7 +29,7 @@ var standard_2_codes = ["SC912E61","SC912E62","SC912L1412","SC912L1413","SC912L1
 /*This fuction runs as soon as the DOM has been loaded and is ready */
 document.addEventListener("DOMContentLoaded", function(){
 
-/* Once the DOM is loaded,*/
+/* Once the DOM is loaded, create a list of elements where the code descriptions are supposed to go*/
 standards_element_list1 = document.getElementById(standard_1.title).getElementsByClassName("col-sm-9");
 standards_element_list2 = document.getElementById(standard_2.title).getElementsByClassName("col-sm-9");
 
