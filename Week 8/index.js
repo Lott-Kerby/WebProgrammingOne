@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function(){
             if (checkboxes[i].checked) 
             {
                checkboxesChecked.push(checkboxes[i]);
-               console.log(checkboxesChecked);
             }
         }
 
