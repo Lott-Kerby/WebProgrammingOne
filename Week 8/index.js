@@ -21,9 +21,10 @@ document.addEventListener("DOMContentLoaded", function(){
         //loop through the checked boxes to show the resources wanted
         for (var i=0; i<checkboxesChecked.length; i++) 
         {
-            var resource_id = checkboxesChecked[i].id;
+            var resource_id = checkboxesChecked[i].value;
             
-            console.log("checked box " + checkboxesChecked[i].id);
+            console.log(checkboxesChecked[i].id);
+            console.log(document.getElementById(resource_id));
             document.getElementById(resource_id).style.display = "block";
         }
 
