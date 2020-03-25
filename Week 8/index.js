@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(){
 
-    
+    //this is the handler for the submit button
+    //when clicked, the page will show links to sites helpful to the user
     document.getElementById("Submit").addEventListener('click', function ()
     {
         //this is the array of chek boxes
@@ -18,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function(){
             }
         }
 
-        //loop through the checked boxes to show the resources wanted
+        //loop through the checked boxes and show the resources wanted
         for (var i=0; i<checkboxesChecked.length; i++) 
         {
             var resource = checkboxesChecked[i].value;
