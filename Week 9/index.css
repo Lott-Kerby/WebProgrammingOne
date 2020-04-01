@@ -1,0 +1,50 @@
+h2
+{
+    font-family: Geneva,Tahoma,Verdana,sans-serif;
+}
+
+body
+{
+    background-color: 	#FFFFE0 !important;
+}
+
+#Picture_container
+{
+    height: 250px;
+    width: 100%;
+    margin-top: 2px;
+    font-size: 19px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* set column sizes here */
+    grid-template-rows: auto auto; /* we want two rows */
+    column-gap: 0%;
+    row-gap: 12%;
+
+    grid-auto-flow: row; /* fill in by column, not row */
+    justify-items: center;
+}
+
+.picture_div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.picture
+{
+    width: 335px;
+    height: 205px;
+}
+
+#Button_panel
+{
+    margin-top: 29%;
+    margin-left: 45%;
+}
+
+.button
+{
+    height: 35px;
+}
