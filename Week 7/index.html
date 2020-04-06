@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/index.css" media="screen">
+</head>
+<body>
+    
+    <form id="frm1">
+        First name: <input type="text" name="fname" value=""><br>
+        Last name: <input type="text" name="lname" value=""><br><br>
+        What is the current year?: <input type="text" name="year" value=""><br>
+        Who is the current president?: <input type="text" name="president" value=""><br><br>
+        What state do you currently live in?: <input type="text" name="state" value=""><br>
+
+    </form>
+
+    <p>Click "Submit" to display your answers.</p>
+
+    <button onclick="myFunction()">Submit</button>
+
+    <div id="answers">
+        <div id="Fname"></div>
+        <div id="Lname"></div>
+        <div id="Year"></div>
+        <div id="President"></div>
+        <div id="State"></div>
+    </div>
+
+    <script>
+        function answers(fname, lname, year, president, state)
+            {
+                this.fname = fname;
+                this.lname = lname;
+                this.year = year;
+                this.president = president;
+                this.state = state;
+            }
+
+        function myFunction() {
+            
+            var x = document.getElementById("frm1");
+            var ans1 = x.elements[0].value;
+            var ans2 = x.elements[1].value;
+            var ans3 = x.elements[2].value;
+            var ans4 = x.elements[3].value;
+            var ans5 = x.elements[4].value;
+
+            var myAnswers = answers(ans1, ans2, ans3, ans4, ans5);
+
+            document.getElementById("Fname").innerHTML = "Your first name is " + ans1;
+            document.getElementById("Lname").innerHTML = "Your last name is " + ans2;
+            document.getElementById("Year").innerHTML = "The current year is " + ans3;
+            document.getElementById("President").innerHTML = "The current president is " + ans4;
+            document.getElementById("State").innerHTML = "The state you currently live in is " + ans5;
+        }
+    </script>
+
+</body>
+
+</html>
