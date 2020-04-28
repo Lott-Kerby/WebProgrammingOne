@@ -1,0 +1,42 @@
+body
+{
+}
+
+h1
+{
+    font-family: Impact, Charcoal, sans-serif !important;
+    font-size: xx-large !important;
+    letter-spacing: 3px !important;
+    color:  rgb(13, 21, 129) !important;
+    text-align: left !important;
+    margin: 0px !important;
+    display: inline !important;
+}
+
+.button
+{
+    background-color: #5ACFC2;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.form-horizontal
+{
+    margin-left: 3%;
+    text-align: left;
+    width: 20%;
+}
+
+#Submit_button
+{
+    margin-top: 5%;
+}
+
+
