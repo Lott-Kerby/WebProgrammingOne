@@ -7,6 +7,11 @@ document.addEventListener("DOMContentLoaded", function(){
         //this is the array of chek boxes
         var checkboxes = document.getElementsByName("checkbox");
         var checkboxesChecked = [];
+
+        if(document.getElementById("Discussion_yes").checked)
+        {
+        
+        }
         
         //loop through the check boxes to see which are checked
         for (var i=0; i<checkboxes.length; i++) 
@@ -14,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function(){
             // the checked ones onto an array...
             if (checkboxes[i].checked) 
             {
+                console.log(checkboxes[i]);
                checkboxesChecked.push(checkboxes[i]);
             }
         }
@@ -22,12 +28,72 @@ document.addEventListener("DOMContentLoaded", function(){
         for (var i=0; i<checkboxesChecked.length; i++) 
         {
             var resource = checkboxesChecked[i].value;
-            document.getElementById(resource).style.display = "block";
         }
 
     });
-    
 });
+var webResources = 
+{
+    doingLong:"",
+    doingShort:"",
+    doingMed:"",
+    readingLong:"",
+    readingShort:"",
+    readingMed:""
+};
+
+function webChosen()
+{
+
+}
+
+var oopResources = 
+{
+    doingLong:"",
+    doingShort:"",
+    doingMed:"",
+    readingLong:"",
+    readingShort:"",
+    readingMed:""
+};
+
+function oopChosen()
+{
+
+}
+
+var gamesResources = 
+{
+    doingLong:"",
+    doingShort:"",
+    doingMed:"",
+    readingLong:"",
+    readingShort:"",
+    readingMed:""
+};
+
+function gamesChosen()
+{
+
+}
+
+var androidResources = 
+{
+    doingLong:"",
+    doingShort:"",
+    doingMed:"",
+    readingLong:"",
+    readingShort:"",
+    readingMed:""
+};
+
+function androidChosen()
+{
+
+}
+
+
+
 
 
 
